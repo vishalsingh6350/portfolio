@@ -1,7 +1,8 @@
     @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;700;900&display=swap&family=Passion+One&display=swap&family=Anton&display=swap');
      :root {
-        --primary: #5a3dfd;
-        --primary: #000;
+        --primary: rgb(90, 61, 253);
+        --primary: #6c0fe4;
+        /* --primary: #000; */
         --dark: #06070B;
     }
     
@@ -99,10 +100,16 @@
         transition: all 0.2s linear;
     }
     
+    .linksContainer a {
+        text-decoration: none;
+        color: unset;
+    }
+    
     .linksContainer li:hover {
         background-color: var(--primary);
         color: white;
         border-radius: 50px;
+        padding-inline: 30px;
     }
     
     .intro {
@@ -127,6 +134,14 @@
         justify-content: center;
         animation: bringFromRightAnim 0.5s ease forwards 1.2s;
         opacity: 0;
+        overflow: hidden;
+        border: 10px solid #5f0dca;
+    }
+    
+    .pic img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
     }
     
     @keyframes bringFromRightAnim {
@@ -422,7 +437,7 @@
     }
     
     .projectsSection .projectsInfo {
-        background-color: var(--dark);
+        background-color: var(--primary);
         padding: 100px;
         padding-bottom: 0;
         color: white;
@@ -522,6 +537,7 @@
         background-color: #2A0356;
         overflow-x: scroll;
         background-color: var(--dark);
+        background: var(--primary);
         overflow-y: hidden;
         position: relative;
         scroll-snap-type: x mandatory;
@@ -574,6 +590,7 @@
         margin: 10px;
         padding: 50px;
         background-color: #222329;
+        background: #2d3258;
         flex: none;
         border-radius: 10px;
         box-shadow: 0px 0px 5px 2px #0000003d;
@@ -604,8 +621,8 @@
     
     .pSecondSection {
         background-color: #373737;
-        background: #222329;
-        box-shadow: -5px -5px 12px #0e0e10, 5px 5px 12px #363842;
+        background: #0e122b;
+        box-shadow: -5px -5px 12px #0e0e1069, 5px 5px 12px #0e122b6b;
         border-radius: 10px;
         padding: 50px;
         width: 70%;
@@ -647,13 +664,13 @@
     }
     
     .projectLanguage {
-        background: linear-gradient(10deg, #ff0077, #5a3dfd);
-        background: linear-gradient(90deg, #90EE90, #1C61B1);
+        /* background: linear-gradient(10deg, #ff0077, #5a3dfd); */
+        /* background: linear-gradient(90deg, #90EE90, #1C61B1); */
         background: linear-gradient( 45deg, #ff5722, #fb8c00);
         border-radius: 5px;
         box-shadow: 0px 0px 5px #ff7f57c7;
-        padding: 10px 30px;
-        font-size: 1.1rem;
+        padding: 7px 30px;
+        font-size: 1rem;
         font-family: 'Anton';
         color: whitesmoke;
         letter-spacing: 1px;
@@ -763,6 +780,7 @@
         }
         .aboutMe {
             padding: 80px 20px;
+            padding-bottom: 120px;
             text-align: center;
         }
         .featured {
@@ -782,6 +800,7 @@
         }
         .fProjectContainer img {
             width: 80%;
+            border: 10px solid var(--primary);
         }
         .skillsSection {
             height: unset;

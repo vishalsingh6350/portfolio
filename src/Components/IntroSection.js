@@ -1,9 +1,11 @@
 import React from 'react'
-
+import pic from '../assets/pictures/profPic.jpg'
 const IntroSection = () => {
    return (
       <div className='intro'>
-            <div className="pic"></div>
+            <div className="pic">
+               <img src={pic} alt="" srcset="" />
+            </div>
             <div className="partition"></div>
             <div className="textSection">
                <h2>Hi! I am vishal singh</h2>

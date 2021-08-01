@@ -136,10 +136,6 @@ const Projects = () => {
                         <div className="number">{mostUsedLanguage}</div>
                         <div className="numberInfo">Most used language</div>
                     </div>
-                    <div className="metaInfo">
-                        <div className="number">{projectsData.length}</div>
-                        <div className="numberInfo">repositories</div>
-                    </div>
                 </div>
             </div>
             <div className="workAroundToAdjustLRBtns">
@@ -155,7 +151,7 @@ const Projects = () => {
                         <div className="pSecondSection">
                             <div className='projectDescription'>{elem.description}</div>
                             <div className='projectLanguage'>{elem.language}</div>
-                            <a href={elem.html_url} className='projectsLink' target='_blank'>repo</a>
+                            <a href={elem.html_url} className='projectsLink' target='_blank'>source code</a>
                             {elem.homepage?<a href={elem.homepage} className='projectsLink' target='_blank'>Live link</a>:''}
                         </div>
                         </div>
